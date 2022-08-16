@@ -1,13 +1,14 @@
 package com.example.headhunter.CLI_App;
 
+import com.example.headhunter.CLI_App.View.WorkerView;
+import com.example.headhunter.CLI_App.database.Connection;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
-            System.out.println("Hi");
-            int a = scanner.nextInt();
-        }
+        WorkerView view = new WorkerView();
+//        view.showWorker();
+        view.updateWorkerInfo();
     }
 }
