@@ -23,4 +23,8 @@ public class WorkerController {
         };
         dao.update(id, Map.of(fieldKey, value));
     }
+
+    public void deleteWorker(int id) {
+        dao.delete(id);
+    }
 }
